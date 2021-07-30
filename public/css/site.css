@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/*Site*/
+
+ /*Parágrafo*/
+
+p{
+    color: #111;
+}
+
+/*Body site*/
+
+body .site{
+    min-height: 1000px;
+}
+
+/*Fundo Site*/
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(farm.jpg);
+    background-size: cover;
+}
+
+/*Texto Banner*/
+
+.banner .content_site{
+    max-width: 900px;
+    text-align: center;
+    font-family: 'Poppins';
+}
+
+/*Texto Banner Estilização*/
+
+.banner .content_site h2{
+    font-size: 5em;
+    color: #fff;
+}
+
+/*Texto Banner Estilização*/
+
+.banner .content_site p{
+    font-size: 1em;
+    color: #fff;
+}
+
+/*Botão Experimente Já*/
+
+.teste{
+    font-size: 1em;
+    color: #fff;
+    background: #ee9817;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+/*Efeito Hover Botão Experimente*/
+
+.teste:hover{
+    letter-spacing: 6px;
+}
+
+/*Barra de Navegação*/
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+/*Grudar Barra de Nav*/
+
+header.sticky{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+/*Logo Barra de Nav*/
+
+.logo{
+    width: 27%;
+    height: auto;
+}
+
+/*Estilização Logo Após Grudar NavBar*/
+
+header.sticky .logo{
+    color: #111;
+}
+
+/*Posição NavBar*/
+
+header .nav{
+    position: relative;
+    display: flex;
+}
+
+/*Estilização Lista NavBar*/
+
+header .nav li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+/*Estilização Lista NavBar*/
+
+header .nav li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+/*Estilização NavBar Após Grudar*/
+
+header.sticky .nav li a{
+    color: #111;
+}
+
+/*Efeito Hover NavBar*/
+
+header .nav li a:hover{
+    color: #ee9817;
+}
+
+/*Espaçamento Conteúdos*/
+
+section{
+    padding: 100px;
+}
+
+section .sobre{
+    width: 100%;
+    height: 100%;
+}
+
+/*Fila de Conteúdos*/
+
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Posição e Tamanho Conteúdo*/
+
+.row .col150{
+    position: relative;
+    width: 48%;
+}
+
+/*Estilização Título*/
+
+.titulo1{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+    font-family: 'Poppins';
+}
+
+/*Estilização Título Letra Maior*/
+
+.titulo1 span{
+    color: #ee9817;
+    font-weight: 700;
+    font-size: 1.5em;
+    font-family: 'Poppins';
+}
+
+/*Tamanho imagem*/
+
+.row .col150 .imgBx{
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+}
+
+/*Posicionamento Imagem*/
+
+.row .col150 .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Estilização Conteúdo Sobre Nós*/
+
+p{
+    font-family: 'Poppins';
+}
+
+/*Background Contato*/
+
+.contato{
+    background: url(mensagem1.png);
+    background-size: cover;
+}
+
+/*Formulário Contato*/
+
+.formcontato{
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.479);
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+/*Estilização Formlário Contato*/
+
+.formcontato h3{
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/*Posição Caixas de Input*/
+
+.formcontato .inputbox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/*Estilização Inputs*/
+
+.formcontato .inputbox input,
+.formcontato .inputbox textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/*Estilização Botão Enviar Form Contato*/
+
+.formcontato .inputbox input[type="submit"]{
+    font-size: 1em;
+    color: #fff;
+    background: #ee9817;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+/*Fim Site*/
+

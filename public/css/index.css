@@ -1,0 +1,727 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap');
+
+/*Tags pra Todos os Sites*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/*Corpo do Site*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*BackGround*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ecf0f1;
+    background-image: url(farm.jpg);
+    background-size: 100% 100%;
+}
+
+/*Ativar Blur*/
+
+.container#blur.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+/*Conteúdo Form*/
+
+.content {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 960px;
+    height: 80%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/*Animação Conteúdo*/
+
+.content::before {
+    content: "";
+    position: absolute;
+    background-color: #ffc800;
+    width: 40%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+
+    left: 0;
+}
+
+/*Títulos*/
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+/*Título Bem Vindo Coluna Esquerda*/
+
+.title-primary {
+    color: #fff;
+}
+
+/*Título Criar Conta Coluna Direita*/
+
+.title-second {
+    color: #ffc800;
+}
+
+/*Descrição Ambas Colunas*/
+
+.description {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+/*Descrição Conecte-se e Insira seus Dados Coluna Esquerda*/
+
+.description-primary {
+    color: #fff;
+}
+
+/*Descrição Ou use seu Email Coluna Direita*/
+
+.description-second {
+    color: #7f8c8d;
+}
+
+/*Estilo Botões*/
+
+.btn {
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+}
+
+/*Estilo Botões - Entrar*/
+
+.btn-primary {
+    background-color: transparent;
+    border: 1px solid #fff;
+    transition: background-color .5s;
+}
+
+/*Animação Botões*/
+
+.btn-primary:hover {
+    background-color: #fff;
+    color: #ffc800;
+}
+
+/*Estilo Botões - Registrar*/
+
+.btn-second {
+    background-color: #ffc800;
+    border: 1px solid #ffc800;
+    transition: background-color .5s;
+}
+
+/*Animação Botões*/
+
+.btn-second:hover {
+    background-color: #fff;
+    border: 1px solid #ffc800;
+    color: #ffc800;
+}
+
+/*Primeiro Conteúdo*/
+
+.first-content {
+    display: flex;
+}
+
+/*Primeiro Conteúdo e Segunda Coluna*/
+
+.first-content .second-column {
+    z-index: 11;
+}
+
+/*Primeira Coluna Estilo*/
+
+.first-column {
+    text-align: center;
+    width: 40%;
+    z-index: 10;
+}
+
+/*Segunda Coluna Estilo*/
+
+.second-column {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Mídias Sociais*/
+
+.social-media {
+    margin: 1rem 0;
+}
+
+/*Reposição Mídia Social*/
+
+.link-social-media:not(:first-child){
+    margin-left: 10px;
+}
+
+/*Animação Mídia Social*/
+
+.link-social-media .item-social-media {
+    transition: background-color .5s;
+}
+
+/*Animação Mídia Social*/
+
+.link-social-media:hover .item-social-media{
+    background-color: #ffc800;
+    color: #fff;
+    border-color: #ffc800;
+}
+
+/*Lista Mídia Social ou Posicionamento dos Ícones*/
+
+.list-social-media {
+    display: flex;
+    list-style-type: none;
+}
+
+/*Estilização Ícones Mídia Social*/
+
+.item-social-media {
+    border: 1px solid #bdc3c7;
+    border-radius: 10%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #95a5a6;
+}
+
+/*Formulário de Login e Registro*/
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+/*Inputs dos Formulários*/
+
+.form input {
+    height: 45px;
+    width: 100%;
+    border: none;
+    background-color: #ecf0f1;
+}
+
+/*Estilização Dos Inputs*/
+
+input:-webkit-autofill 
+{    
+    box-shadow: 0 0 0px 1000px #ecf0f1 inset !important;
+    -webkit-text-fill-color: #000 !important;
+}
+
+/*Estilização Dos Inputs*/
+
+.label-input {
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+
+/*Estilização Ícones Inputs*/
+
+.icon-modify {
+    color: #7f8c8d;
+    padding: 0 10px;
+}
+
+/*Segunda Coluna*/
+
+.second-content {
+    position: absolute;
+    display: flex;
+}
+
+/*Segundo Conteúdo Primeira Coluna Posicionamento*/
+
+.second-content .first-column {
+    order: 2;
+    z-index: -1;
+}
+
+/*Segundo Conteúdo Segunda Coluna Posicionamento*/
+
+.second-content .second-column {
+    order: 1;
+    z-index: -1;
+}
+
+/*Estilização Senha*/
+
+.password {
+    color: #34495e;
+    font-size: 14px;
+    margin: none;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*Animação Senha*/
+
+.password::first-letter {
+    text-transform: capitalize;
+}
+
+/*Posicionamento*/
+
+.sign-in-js .first-content .first-column {
+    z-index: -1;
+}
+
+.sign-in-js .second-content .second-column {
+    z-index: 11;
+}
+.sign-in-js .second-content .first-column {
+    z-index: 13;
+}
+
+/*Animação Slide*/
+
+.sign-in-js .content::before {
+    left: 60%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    animation: slidein 0.2s;
+
+    z-index: 12;
+}
+
+/*Animação*/
+
+.sign-up-js .content::before {
+    animation: slideout 0.2s;
+
+    z-index: 12;
+}
+
+/*Posicionamento e Animação*/
+
+.sign-up-js .second-content .first-column,
+.sign-up-js .second-content .second-column {
+    z-index: -1;
+}
+
+.sign-up-js .first-content .second-column {
+    z-index: 11;
+}
+
+.sign-up-js .first-content .first-column {
+    z-index: 13;    
+}
+
+.sign-in-js .first-content .second-column {
+
+    z-index: -1;
+    position: relative;
+    animation: deslocamentoEsq 0.5;
+}
+
+.sign-up-js .second-content .second-column {
+    position: relative;
+    z-index: -1;
+    animation: deslocamentoDir 0.5;
+}
+
+/*Animação*/
+
+@keyframes deslocamentoEsq {
+
+    from {
+        left: 0;
+        opacity: 1;
+        z-index: 12;
+    }
+
+    25% {
+        left: -80px;
+        opacity: .5;
+    }
+
+    50% {
+        left: -100px;
+        opacity: .2;
+    }
+
+    to {
+        left: -110px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+
+@keyframes deslocamentoDir {
+
+    from {
+        left: 0;
+        z-index: 12;
+    }
+
+    25% {
+        left: 80px;
+    }
+
+    50% {
+        left: 100px;
+    }
+
+    to {
+        left: 110px;
+        z-index: -1;
+    }
+}
+
+@keyframes slidein {
+
+    from {
+        left: 0;
+        width: 40%;
+    }
+
+    25% {
+        left: 5%;
+        width: 50%;
+    }
+
+    50% {
+        left: 25%;
+        width: 60%;
+    }
+
+    75% {
+        left: 45%;
+        width: 50%;
+    }
+
+    to {
+        left: 60%;
+        width: 40%;
+    }
+}
+
+@keyframes slideout {
+
+    from {
+        left: 60%;
+        width: 40%;
+    }
+
+    25% {
+        left: 45%;
+        width: 50%;
+    }
+
+    50% {
+        left: 25%;
+        width: 60%;
+    }
+
+    75% {
+        left: 5%;
+        width: 50%;
+    }
+
+    to {
+        left: 0;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .content {
+        width: 100%;
+        height: 100%;
+    }
+
+    .content::before {
+        width: 100%;
+        height: 40%;
+        top: 0;
+        border-radius: 0;
+    }
+    .first-content, .second-content {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .first-column, .second-column {
+        width: 100%;
+    }
+    
+    .sign-in-js .content::before {
+        top: 60%;
+        left: 0;
+        border-radius: 0;
+
+    }
+
+    .form {
+        width: 90%;
+    }
+
+    /*Efeitos index*/
+
+    @keyframes deslocamentoEsq {
+
+        from {
+            top: 0;
+            opacity: 1;
+            z-index: 12;
+        }
+    
+        25% {
+            top: -80px;
+            opacity: .5;
+        }
+    
+        50% {
+            top: -100px;
+            opacity: .2;
+        }
+    
+        to {
+            top: -110px;
+            opacity: 0;
+            z-index: -1;
+        }
+    }
+    
+    
+    @keyframes deslocamentoDir {
+    
+        from {
+            top: 0;
+            z-index: 12;
+        }
+    
+        25% {
+            top: 80px;
+        }
+    
+        50% {
+            top: 100px;
+        }
+    
+        to {
+            top: 110px;
+            z-index: -1;
+        }
+    }
+    
+    
+    
+    @keyframes slidein {
+    
+        from {
+            top: 0;
+            height: 40%;
+        }
+    
+        25% {
+            top: 5%;
+            height: 50%;
+        }
+    
+        50% {
+            top: 25%;
+            height: 60%;
+        }
+    
+        75% {
+            top: 45%;
+            height: 50%;
+        }
+    
+        to {
+            top: 60%;
+            height: 40%;
+        }
+    }
+    
+    @keyframes slideout {
+    
+        from {
+            top: 60%;
+            height: 40%;
+        }
+    
+        25% {
+            top: 45%;
+            height: 50%;
+        }
+    
+        50% {
+            top: 25%;
+            height: 60%;
+        }
+    
+        75% {
+            top: 5%;
+            height: 50%;
+        }
+    
+        to {
+            top: 0;
+            height: 40%;
+        }
+    }
+   
+}
+
+@media screen and (max-width: 740px) {
+    .form {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .form {
+        width: 100%;
+    }
+}
+
+/*Efeito Blur*/
+
+.blur { 
+    filter: blur(20px);
+}
+
+/*Esqueci minha Senha*/
+
+.forgottenPassword {
+    width: 450px;
+    height: 200px;
+}
+
+/*Modal*/
+
+.modal {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 13;
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px; 
+    box-shadow: 0px -1px 10px -2px #000000;
+}
+
+/*Modal Vísivel*/
+
+.visible {
+    display: block;
+}
+
+/*Fechar Modal*/
+
+.modal-close {
+    position: absolute;
+    width: 25px;
+    top: -5px;
+    right: -5px;
+    color: white;
+    background-color: black;
+    border-radius: 500px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+/*Terceiro Título*/
+
+.title-third{
+    color: #ffc800;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/*Formulário Modal*/
+
+.modal-form{
+    display: flex;
+    width: 100%;
+    position: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+/*Botão Modal*/
+
+.btn-third{
+    position: absolute;
+    display: block;
+    margin-top: 90px;
+    background-color: #ffc800;
+    border: 1px solid #ffc800;
+    transition: background-color .5s;
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    align-self: center;
+    border: none;
+}
+
+/*Email Modal*/
+
+.esqueci{
+    height: 45px;
+    width: 100%;
+    border: none;
+    background-color: #ecf0f1
+}
